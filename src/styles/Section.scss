@@ -1,0 +1,35 @@
+@import "./colors";
+@import "./buttons";
+.main-section {
+  background: linear-gradient(
+      to right bottom,
+      rgba(252, 104, 18, 0.587),
+      rgba(252, 96, 69, 0.363)
+    ),
+    url(../assets/main.jpg);
+  height: 80vh;
+  background-size: cover;
+  overflow: hidden;
+
+  .content {
+    margin: 12rem;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+      color: $main-color;
+      text-shadow: 3px 3px 3px $main-color;
+    }
+    button {
+      @include button;
+    }
+    button:hover {
+      @include hover;
+    }
+  }
+  .bottom-text {
+    margin-left: 1rem;
+    p {
+      color: $main-color;
+    }
+  }
+}
