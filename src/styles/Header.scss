@@ -10,7 +10,6 @@
     justify-content: space-between;
     height: 4rem;
     background-color: $main-color;
-
     .ul-items {
       list-style: none;
 
@@ -32,7 +31,6 @@
     margin-right: 2rem;
     font-family: $font-roboto;
   }
-
   .right {
     @include flex-center;
     .search {
