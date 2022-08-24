@@ -24,22 +24,20 @@ function CreamSection() {
           <div className="gift">
             <img src={bus} alt="" />
           </div>
-          <p>Send As A gift</p>
-          <p>Ship your gift with a free personalized message</p>
+          <p>Safty Delivering</p>
+          <p>Ensuring safe delivery for perfection</p>
         </div>
         <div className="exps">
           <div className="gift">
             <img src={box} alt="" />
           </div>
-          <p>Send As A gift</p>
-          <p>Ship your gift with a free personalized message</p>
+          <p>We can Separate gift wrapping</p>
         </div>
         <div className="exps">
           <div className="gift">
             <img src={cart} alt="" />
           </div>
-          <p>Send As A gift</p>
-          <p>Ship your gift with a free personalized message</p>
+          <p>We support all kind of credit card</p>
         </div>
       </div>
     </section>

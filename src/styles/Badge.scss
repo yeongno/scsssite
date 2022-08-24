@@ -1,0 +1,30 @@
+.badge.active {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+
+  display: block;
+
+  img {
+    opacity: 1;
+    transition-duration: 2s;
+    border-radius: 5px;
+    width: 10vw;
+    height: 10vh;
+  }
+}
+.badge.off {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+
+  display: block;
+
+  img {
+    opacity: 0;
+    transition-duration: 2s;
+    border-radius: 5px;
+    width: 10vw;
+    height: 10vh;
+  }
+}

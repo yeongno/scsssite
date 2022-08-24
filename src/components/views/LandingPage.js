@@ -6,10 +6,12 @@ import Sections from "./Sections";
 import SmallSection from "./SmallSection";
 import { Data } from "../Data";
 import Footer from "./Footer";
+import Badges from "./Badge/Badges";
 function LandingPage() {
   return (
     <div>
       <Header />
+      <Badges />
       <Sections />
       <SmallSection />
       <CreamSection />
