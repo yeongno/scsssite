@@ -1,9 +1,24 @@
+import { MenuOutlined } from "@ant-design/icons";
 import { SearchOutlined, ShoppingBasket } from "@mui/icons-material";
-import React from "react";
+import { Button } from "@mui/material";
+import { Drawer } from "antd";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Header.scss";
+import LeftMenu from "./Drawer/Section/LeftMenu";
+import RightMenu from "./Drawer/Section/RightMenu";
 
 function Header() {
+  const [visible, setVisible] = useState(false);
+
+  const showDrawer = () => {
+    setVisible(true);
+  };
+
+  const onClose = () => {
+    setVisible(false);
+  };
+
   return (
     <div className="header">
       <nav>
@@ -36,6 +51,24 @@ function Header() {
             <ShoppingBasket className="basket" />
           </div>
         </div>
+        <Button
+          className="menu__mobile-button"
+          type="primary"
+          onClick={showDrawer}
+        >
+          <MenuOutlined type="align-right" />
+        </Button>
+        <Drawer
+          title="Basic Drawer"
+          placement="right"
+          className="menu_drawer"
+          closable={false}
+          onClose={onClose}
+          visible={visible}
+        >
+          <LeftMenu mode="inline" />
+          <RightMenu mode="inline" />
+        </Drawer>
       </nav>
     </div>
   );

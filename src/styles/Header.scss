@@ -4,7 +4,8 @@
 .header {
   position: sticky;
   top: 0;
-
+  background-color: $main-color;
+  width: 100vw;
   nav {
     @include flex-center;
     justify-content: space-between;
@@ -65,6 +66,43 @@
     }
     .basket {
       color: $bascket-color;
+    }
+  }
+
+  .menu__mobile-button {
+    float: right;
+    height: 32px;
+    padding: 6px;
+    margin-top: 8px;
+    display: none !important; /* use of important to overwrite ant-btn */
+  }
+  //반응형 navBar 1000px이 되면 drawer와 logo만 남는다.
+  //pc 150%확대시 작동
+
+  .ant-drawer-body {
+    padding: 0 !important;
+    background: black;
+  }
+
+  /* align header of Drawer with header of page */
+  .ant-drawer-header {
+    padding: 14px 24px !important;
+  }
+  .menu_drawer {
+    background: black;
+  }
+  @media (max-width: 1100px) {
+    .menu__mobile-button {
+      display: inline-block !important;
+    }
+
+    .logo {
+      margin-left: 30%;
+    }
+
+    .ul-items,
+    .right {
+      display: none;
     }
   }
 }
